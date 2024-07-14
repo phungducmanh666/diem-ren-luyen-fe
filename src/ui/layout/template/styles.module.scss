@@ -1,0 +1,36 @@
+@import "/src/ui/styles/common/importer.scss";
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+  .header {
+  }
+  .body {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - #{$header-height});
+    @include flex-box(row, flex-start, flex-start);
+    .sidebar {
+      height: calc(100vh - #{$header-height});
+      &.--hide {
+        margin-left: -$sidebar-width;
+      }
+    }
+    .main {
+      overflow: auto;
+      width: 100%;
+      height: 100%;
+      .page {
+        min-height: calc(100vh - #{$header-height});
+        width: 100%;
+        padding: 10px;
+      }
+      .footer {
+        width: 100%;
+        // background: red;
+        // padding: 200px;
+        // border: 5px solid black;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import './variable.scss';
+
+@each $fill-key, $fill-value in $icon-size {
+    .icon--#{$fill-key} {
+        width: $fill-value;
+        height: $fill-value;
+    }
+  }

@@ -1,0 +1,19 @@
+@import "/src/ui/styles/common/importer.scss";
+
+.container {
+  @include flex-box(row, flex-start, center);
+  height: $header-height;
+  width: 100%;
+  background-color: $primary-color-4;
+  .title {
+    color: $white-color;
+  }
+  .menu-icon {
+    color: $white-color;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    &.--show {
+      transform: rotate(45deg);
+    }
+  }
+}

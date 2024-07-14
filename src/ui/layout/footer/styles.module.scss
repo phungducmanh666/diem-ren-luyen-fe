@@ -1,0 +1,22 @@
+@import "/src/ui/styles/common/importer.scss";
+
+.container {
+  background-color: $primary-color-4;
+  padding: 20px;
+  .row {
+    .col {
+      .footer_col {
+        padding: 10px;
+        .header {
+          text-transform: capitalize;
+          font-weight: bold;
+          color: $white-color;
+        }
+        .content {
+          margin-top: 20px;
+          @include flex-box(column, flex-start, flex-start);
+        }
+      }
+    }
+  }
+}

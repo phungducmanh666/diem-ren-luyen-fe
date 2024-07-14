@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"],
+      "~components/*": ["src/ui/components/*"],
+      "~layout/*": ["src/ui/layout/*"],
+      "~styles/*": ["src/ui/styles/*"],
+      "~utils/*": ["src/logic/utils/*"]
+    }
+  }
+}

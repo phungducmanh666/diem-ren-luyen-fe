@@ -1,0 +1,8 @@
+@import "/src/ui/styles/common/importer.scss";
+
+.container {
+  background-color: $primary-color-8;
+  width: $sidebar-width;
+  height: 100%;
+  overflow-y: auto;
+}

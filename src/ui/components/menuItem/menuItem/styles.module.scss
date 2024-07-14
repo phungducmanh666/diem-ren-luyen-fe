@@ -1,0 +1,24 @@
+@import "src/ui/styles/common/importer.scss";
+
+.menu-item {
+  @include flex-box(row, flex-start, center);
+  padding: 10px;
+  cursor: pointer;
+  &__icon {
+    @extend .icon--sm;
+    margin-right: 10px;
+    color: $white-color;
+    > * {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    color: $white-color;
+  }
+
+  &:hover {
+    background-color: $primary-color-1;
+  }
+}

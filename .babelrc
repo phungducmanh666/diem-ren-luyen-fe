@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        // "root": ["./src"],
+        "alias": {
+          "~": "./src",
+          "~components": "./src/ui/components",
+          "~layout": "./src/ui/layout",
+          "~styles": "./src/ui/styles",
+          "~utils": "./src/logic/utils"
+        }
+      }
+    ]
+  ]
+}
